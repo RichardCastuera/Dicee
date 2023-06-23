@@ -47,7 +47,9 @@ class _DicePageState extends State<DicePage> {
         children: [
           Expanded(
             child: TextButton(
-              onPressed: generateRandDice,
+              onPressed: () {
+                generateRandDice();
+              },
               child: Image.asset('images/dice$leftDiceNumber.png'),
             ),
           ),
